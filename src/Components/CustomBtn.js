@@ -15,18 +15,18 @@ export default ({title, onPress}) => {
 };
 const style = StyleSheet.create({
   backbtn: {
-    backgroundColor:colors.DARKPURPLE,
+    backgroundColor:colors.PURPLECOLOR,
     height:verticalScale(60),
     borderColor:colors.WHITE,
     alignItems: 'center',
     width: '100%',
     alignSelf: 'center',
     justifyContent: 'center',
-    borderRadius: 4,
+    borderRadius: 50,
     borderWidth:1
   },
   btntext: {
     fontSize:20,
-    color: colors.WHITE,
+    color: colors.BLACK,
   },
 });

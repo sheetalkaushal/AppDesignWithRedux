@@ -1,16 +1,17 @@
-import loginScreen from "../Screens/LoginScreen/LoginScreen";
-import SignUpScreens from "../Screens/SignupScreens/SignUpScreens";
+import LoginScreen from '../Screen/LoginScreen/LoginScreen';
+import SignUpScreen from '../Screen/SignUpScreen/SignUpScreen';
+
 export default function AuthStack(Stack) {
   return (
     <>
       <Stack.Screen
         name={'LoginScreen'}
-        component={loginScreen}
+        component={LoginScreen}
         options={{headerShown: false}}
       />
-        <Stack.Screen
-        name={'SignUpScreens'}
-        component={SignUpScreens}
+         <Stack.Screen
+        name={'SignUpScreen'}
+        component={SignUpScreen}
         options={{headerShown: false}}
       />
     </>

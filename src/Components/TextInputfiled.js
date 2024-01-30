@@ -35,11 +35,11 @@ const TextInputfiled = ({
           maxLength={maxLength}
           keyboard={keyboardType}
           showPasswordTouch={showPasswordTouch}
-          placeholderTextColor={colors.SMOKYWHITE}></TextInput>
+          placeholderTextColor={colors.BLACK}></TextInput>
         {passwordInput ? (
           <TouchableOpacity onPress={toggleEye} style={style.hidebtn}>
             <Image
-              source={passcheck ? imagePath.icHide : imagePath.icView}
+              source={passcheck ? imagePath.Hide : imagePath.View}
               style={style.passwordicon}
             />
           </TouchableOpacity>
@@ -51,23 +51,27 @@ const TextInputfiled = ({
 const style = StyleSheet.create({
   inputtext: {
     fontSize: 17,
-    borderBottomWidth: 2,
-    borderBottomColor: colors.SMOKYWHITE,
-    color: colors.WHITE,
+    borderBottomWidth: 1,
+    borderBottomColor: 'black',
+    color: colors.BLACK,
     width: '100%',
     fontWeight: '400',
-    paddingLeft:0,
+    paddingLeft: 0,
   },
   hidebtn: {
     position: 'absolute',
-    right: 5,
-    top: 15,
+    right: 10,
+    top: 10,
+    width: 30,
+    height: 30,
   },
   textField: {
     alignItems: 'center',
   },
   passwordicon: {
-    tintColor: colors.WHITE,
+    tintColor: colors.BLACK,
+    height: '100%',
+    width: '100%',
   },
   container: {
     marginTop: moderateVerticalScale(7),
